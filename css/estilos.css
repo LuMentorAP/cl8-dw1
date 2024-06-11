@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.caja {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    margin: 50px;
+    transition: transform 200ms ease;
+}
+
+.caja:hover {
+    transform: scale(2);
+    border-radius: 20px;
+    background-color: red;
+}
+
+/*--CSS--*/
+.caja2 {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    margin: 50px;
+    transition: all 200ms ease;
+}
+
+.caja2:hover {
+    transform: translate(60px, 90px);
+    /* transform: scale(3); */
+    background-color: blue;
+}
+
+/*--CSS--*/
+.caja3 {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    margin: 50px;
+    transition: transform 300ms ease-in-out;
+}
+
+.caja3:hover {
+    transform: rotate(45deg);
+}
+
+.caja4 {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    margin: 50px;
+    transition: transform 200ms ease-out;
+}
+
+.caja4:hover {
+    transform: rotate(45deg);
+}
+
+.Navbar {
+    display: flex;
+    background-color: darkorange;
+    justify-content: center;
+    height: 5vh;
+    align-items: center;
+    gap: 9px;
+}
+
+.hero {
+    height: 95vh;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: blanchedalmond;
+    font-size: 3rem;
+}
+
+.parent {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 7px;
+
+}
+
+.div1 {
+    grid-area: 1 / 5 / 3 / 7;
+}
+
+.div2 {
+    grid-area: 3 / 3 / 4 / 7;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div3 {
+    grid-area: 2 / 3 / 3 / 5;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div4 {
+    grid-area: 2 / 1 / 4 / 3;
+}
+
+.div5 {
+    grid-area: 1 / 1 / 2 / 5;
+    background-color: rgb(224, 163, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
